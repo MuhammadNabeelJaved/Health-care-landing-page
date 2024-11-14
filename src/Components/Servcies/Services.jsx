@@ -3,6 +3,7 @@ import "./services.css";
 import Inputs from "./Inputs";
 import search from "../../assets/search.svg";
 import location from "../../assets/location.svg";
+import Services from "./service.jsx";
 
 const services = () => {
   return (
@@ -14,7 +15,7 @@ const services = () => {
             icon={search}
             placeholder="Search Doctor, Hospital, or anything"
           />
-          <div className="seacrh-input">
+          <div className="search-input">
             <Inputs
               type="search"
               icon={location}
@@ -58,7 +59,7 @@ const services = () => {
             </svg>
           </div>
         </div>
-        <div className="services"></div>
+        <Services />
       </div>
     </>
   );
