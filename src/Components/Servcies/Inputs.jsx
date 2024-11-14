@@ -1,5 +1,5 @@
 import React from "react";
-import "./servcies.css";
+import "./services.css";
 
 const Inputs = ({ type, placeholder, icon }) => {
   return (

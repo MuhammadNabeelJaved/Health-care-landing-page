@@ -1,13 +1,13 @@
 import React from "react";
-import "./servcies.css";
+import "./services.css";
 import Inputs from "./Inputs";
 import search from "../../assets/search.svg";
 import location from "../../assets/location.svg";
 
-const Servcies = () => {
+const services = () => {
   return (
     <>
-      <div className="servcies-container">
+      <div className="services-container">
         <div className="inputs">
           <Inputs
             type="search"
@@ -58,10 +58,10 @@ const Servcies = () => {
             </svg>
           </div>
         </div>
-        <div className="servcies"></div>
+        <div className="services"></div>
       </div>
     </>
   );
 };
 
-export default Servcies;
+export default services;
