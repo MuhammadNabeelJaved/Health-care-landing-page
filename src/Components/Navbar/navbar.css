@@ -1,0 +1,64 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+  --font-weight: 500;
+  --font-color: #fff;
+  --nav-item-color: #abb6c7;
+  --dark: #102851;
+  --background-color: #2aa8ff;
+  --link-color: #fff;
+  --link-hover-color: #fff;
+  --button-bg-color: #2aa8ff;
+}
+
+.App-header {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.nav-list li {
+  list-style: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  cursor: pointer;
+}
+.nav-list-home {
+  color: var(--dark, #102851);
+  letter-spacing: 0.32px;
+}
+.item-links {
+  color: var(--nav-item-color, #abb6c7);
+}
+.sign-up-in {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.sign-up {
+  color: var(--dark, #102851);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  cursor: pointer;
+}
+.sign-in {
+  display: inline-flex;
+  padding: 12px 36px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--button-bg-color, #2aa8ff);
+  color: var(--font-color, #fff);
+  cursor: pointer;
+}
