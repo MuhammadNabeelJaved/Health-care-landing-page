@@ -69,4 +69,8 @@
   background: var(--button-bg-color, #2aa8ff);
   color: var(--font-color, #fff);
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.sign-in:hover {
+  background: #51b6ff;
 }

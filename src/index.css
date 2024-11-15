@@ -23,5 +23,4 @@
 body {
   /* background: var(---body-bg-color); */
   font-family: var(--font-family);
-  height: 200vh;
 }
