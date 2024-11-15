@@ -52,6 +52,7 @@ const Doctors = () => {
   const settings = {
     className: "center slider-container",
     infinite: true,
+    dots: true,
     centerPadding: "30px",
     slidesToShow: 4,
     swipeToSlide: true,
@@ -60,6 +61,13 @@ const Doctors = () => {
     afterChange: function (index) {
       console.log(`Slider Changed to: ${index + 1}`);
     },
+    // customPaging: function (i) {
+    //   return (
+    //     <div className="custom-dot">
+    //     </div>
+    //   );
+    // },
+    // dotsClass: "slick-dots custom-dots", // Custom class for dots
   };
 
   return (
