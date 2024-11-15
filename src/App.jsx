@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar/Navbar.jsx";
 import Hero from "./Components/Hero/Hero.jsx";
 import Services from "./Components/Servcies/Services.jsx";
 
-
 function App() {
   const [count, setCount] = useState(0);
 

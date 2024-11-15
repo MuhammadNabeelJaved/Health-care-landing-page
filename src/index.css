@@ -16,8 +16,12 @@
   --link-color: #fff;
   --link-hover-color: #fff;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background: var(---body-bg-color);
+  /* background: var(---body-bg-color); */
   font-family: var(--font-family);
+  height: 200vh;
 }

@@ -1,4 +1,9 @@
 :root {
+  ---body-bg-color: linear-gradient(
+    81deg,
+    #e7f0ff 9.01%,
+    rgba(232, 241, 255, 0.47) 89.11%
+  );
   --font-family: "Poppins", sans-serif;
   --font-size: 16px;
   --font-weight: 500;
@@ -17,6 +22,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px 100px;
+  background: var(---body-bg-color, #e7f0ff);
 }
 
 .hero-title {
@@ -32,6 +38,7 @@
   font-weight: var(--font-weight);
   line-height: 88px;
   letter-spacing: 1.12px;
+  margin-bottom: 40px;
 }
 .paragraph {
   color: var(--nav-item-color, #abb6c7);
