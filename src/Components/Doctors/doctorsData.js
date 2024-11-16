@@ -1,12 +1,12 @@
 import { nanoid } from 'nanoid'
-import doctor1 from "../../assets/doctor-1.jpg";
-import doctor2 from "../../assets/doctor-2.jpg";
-import doctor3 from "../../assets/doctor-3.jpg";
-import doctor4 from "../../assets/doctor-4.jpg";
-import doctor5 from "../../assets/doctor-5.jpg";
-import doctor7 from "../../assets/doctor-7.jpg";
-import doctor8 from "../../assets/doctor-8.jpg";
-import doctor9 from "../../assets/doctor-9.jpg";
+import doctor1 from "../../assets/doctor-1.png";
+import doctor2 from "../../assets/doctor-2.png";
+import doctor3 from "../../assets/doctor-3.png";
+import doctor4 from "../../assets/doctor-4.png";
+import doctor5 from "../../assets/doctor-5.png";
+import doctor7 from "../../assets/doctor-7.png";
+import doctor8 from "../../assets/doctor-8.png";
+import doctor9 from "../../assets/doctor-9.png";
 
 
 const doctorsData = [
