@@ -87,15 +87,15 @@
   width: 100%;
 }
 .rectangle-image {
-  width: 200px;
+  width: 236px;
   height: 300px;
   flex-shrink: 0;
   fill: #e8f1ff;
   overflow: hidden;
   object-fit: cover;
-  background-color: #e8f1ff;
+  /* background-color: #e8f1ff; */
   position: absolute;
-  left: 230px;
+  left: 215px;
 }
 .review-profile {
   display: flex;

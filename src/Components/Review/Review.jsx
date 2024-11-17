@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./review.css";
-import doctor9 from "../../assets/doctor-9.jpg";
+import doctor9 from "../../assets/doctor-9.png";
 import stars from "../../assets/stars.svg";
 import reviewsData from "./reviewsData.js";
 
@@ -73,7 +73,18 @@ const Review = () => {
             <div className="rectangle-image">
               <img style={{ width: "100%" }} src={doctor9} alt="Review Image" />
             </div>
-            <div class="irregular-shape"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="456"
+              height="237"
+              viewBox="0 0 456 237"
+              fill="none"
+            >
+              <path
+                d="M32.4477 49.8331C34.6618 38.8792 43.877 30.7253 55.019 29.8611L428.32 0.909663C442.846 -0.216855 455.254 11.2658 455.254 25.8348V211.92C455.254 225.727 444.061 236.92 430.254 236.92H25.1901C9.39301 236.92 -2.44417 222.45 0.685663 206.966L32.4477 49.8331Z"
+                fill="#E8F1FF"
+              />
+            </svg>
             {/* <Slider className="slider" {...settings}> */}
             <div className="review-container">
               <div className="review-profile">

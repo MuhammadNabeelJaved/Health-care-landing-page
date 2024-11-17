@@ -1,0 +1,106 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-size: 16px;
+  --font-weight: 500;
+  --font-color: #fff;
+  --nav-item-color: #abb6c7;
+  --dark: #102851;
+  --Primary: #2aa8ff;
+  --link-color: #fff;
+  --link-hover-color: #fff;
+  --button-bg-color: #2aa8ff;
+  --White: #fff;
+  --Gray: #abb6c7;
+}
+.subscribe-container {
+  padding: 100px;
+  margin-top: 200px;
+  border-radius: 35px;
+}
+.subscribe-content {
+  background: #e7f0ff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 35px;
+  gap: 85px;
+}
+.subscribe-image {
+  width: 570px;
+  height: 524px;
+  flex-shrink: 0;
+  border-radius: 35px 0px 0px 35px;
+  background: rgba(30, 30, 30, 0.24);
+  mix-blend-mode: hard-light;
+}
+.subscribe-title {
+  color: var(--dark, #102851);
+  font-family: var(--font-family, sans-serif);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: var(--font-weight, 500);
+  line-height: 62px; /* 163.158% */
+  letter-spacing: 0.76px;
+}
+.subscribe-description {
+  color: var(--Gray, #abb6c7);
+  font-family: var(--font-family, sans-serif);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.4px;
+}
+.subscribe-input,
+.subscribe {
+  width: 432px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--White, #fff);
+  outline: none;
+  stroke: none;
+  border: none;
+}
+.subscribe-input[type="text"] {
+  color: var(--Gray, #abb6c7);
+  /* text-align: center; */
+  font-family: var(--font-family, sans-serif);
+  font-size: var(--font-size, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  padding-left: 24px;
+}
+.subscribe-text {
+  width: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.subscribe-button {
+  width: 112px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--dark, #102851);
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: var(--font-family, sans-serif);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  position: relative;
+  right: 120px;
+  cursor: pointer;
+}
+.subscribe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
