@@ -15,12 +15,14 @@ const services = () => {
               type="search"
               icon={search}
               placeholder="Search Doctor, Hospital, or anything"
+              id={"search"}
             />
             <div className="search-input">
               <Inputs
                 type="search"
                 icon={location}
                 placeholder="Set your location"
+                id={"location"}
               />
               <div className="search-icon">
                 <svg

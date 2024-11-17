@@ -14,7 +14,7 @@
 }
 
 .services-container {
-  width: 1230px;
+  width: 72vw;
   flex-shrink: 0;
   border-radius: 15px;
   background: var(--White, #fff);
@@ -45,7 +45,7 @@
 }
 
 .input {
-  width: 505px;
+  width: 27vw;
   height: 50px;
   flex-shrink: 0;
   border-radius: 8px;
@@ -55,6 +55,7 @@
   outline: none;
   flex: 1;
   padding: 20px 50px;
+  flex-grow: 1;
 }
 
 /* Target the input field */
@@ -68,11 +69,13 @@
   letter-spacing: 0.28px;
 }
 
+
 .search-input {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .input-search-icon {
@@ -159,6 +162,7 @@
   align-items: center;
   flex-direction: column;
   border: 1px solid #fafbfe;
+  flex-grow: 1;
 }
 
 .service-categories:hover {
@@ -183,7 +187,24 @@
 
   /* Add your mobile styles here */
   .services-container {
-    width: 280px;
+    top: 35vh;
+  }
+  .inputs {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .search-input div,
+  .inputs div{
+    width: 100%;
+  }
+  .input,
+  .search-icon,
+  .search-input {
+    width: 100%;
+  }
+  .input-search-icon[id="location"]{
+    margin-top: 70px;
   }
 }
 
@@ -192,7 +213,24 @@
 
   /* Add your tablet styles here */
   .services-container {
-    width: 550px;
+    top: 55vh;
+  }
+  .inputs {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .search-input div,
+  .inputs div{
+    width: 100%;
+  }
+  .input,
+  .search-icon,
+  .search-input {
+    width: 100%;
+  }
+  .input-search-icon[id="location"]{
+    margin-top: 70px;
   }
 }
 
@@ -201,7 +239,25 @@
 
   /* Add your small screen/laptop styles here */
   .services-container {
-    width: 650px;
+    top: 70vh;
+  }
+
+  .inputs {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .search-input div,
+  .inputs div{
+    width: 100%;
+  }
+  .input,
+  .search-icon,
+  .search-input {
+    width: 100%;
+  }
+  .input-search-icon[id="location"]{
+    margin-top: 70px;
   }
 }
 
@@ -209,16 +265,12 @@
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
   /* Add your desktop styles here */
-  .services-container {
-    width: 850px;
-  }
+
 }
 
 /* TV and Extra large screens */
 @media screen and (min-width: 1201px) and (max-width: 1340px) {
 
   /* Add your extra large screen styles here */
-  .services-container {
-    max-width: 1054px;
-  }
+
 }
