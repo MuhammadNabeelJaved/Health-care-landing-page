@@ -86,11 +86,12 @@
 
 
 /* Small devices (Mobile devices) */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 480px) {
 
   /* Add your mobile styles here */
   .App-header {
     padding: 0px;
+    display: none;
   }
 
   .navbar {
@@ -131,6 +132,7 @@
   /* Add your tablet styles here */
   .App-header {
     padding: 0px;
+    display: none;
   }
 
   .navbar {
@@ -171,6 +173,7 @@
   /* Add your small screen/laptop styles here */
   .App-header {
     padding: 0px;
+    display: none;
   }
 
   .navbar {
