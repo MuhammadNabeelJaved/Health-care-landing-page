@@ -1,9 +1,7 @@
 :root {
-  ---body-bg-color: linear-gradient(
-    81deg,
-    #e7f0ff 9.01%,
-    rgba(232, 241, 255, 0.47) 89.11%
-  );
+  ---body-bg-color: linear-gradient(81deg,
+      #e7f0ff 9.01%,
+      rgba(232, 241, 255, 0.47) 89.11%);
   --font-family: "Poppins", sans-serif;
   --font-size: 16px;
   --font-weight: 500;
@@ -21,18 +19,21 @@
   background: var(---body-bg-color, #e7f0ff);
   padding: 30px 0px;
 }
+
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: transparent;
 }
+
 .nav-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
 }
+
 .nav-list li {
   list-style: none;
   font-family: var(--font-family);
@@ -40,19 +41,23 @@
   font-weight: var(--font-weight);
   cursor: pointer;
 }
+
 .nav-list-home {
   color: var(--dark, #102851);
   letter-spacing: 0.32px;
 }
+
 .item-links {
   color: var(--nav-item-color, #abb6c7);
 }
+
 .sign-up-in {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
 }
+
 .sign-up {
   color: var(--dark, #102851);
   font-family: var(--font-family);
@@ -60,6 +65,7 @@
   font-weight: var(--font-weight);
   cursor: pointer;
 }
+
 .sign-in {
   display: inline-flex;
   padding: 12px 36px;
@@ -71,6 +77,38 @@
   cursor: pointer;
   transition: background 0.2s ease-in-out;
 }
+
 .sign-in:hover {
   background: #51b6ff;
+}
+
+
+/* Small devices (Mobile devices) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* Add your mobile styles here */
+}
+
+/* Medium devices (iPads, Tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  /* Add your tablet styles here */
+}
+
+/* Large devices (Small screens, laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* Add your small screen/laptop styles here */
+}
+
+/* Extra large devices (Desktops, large screens) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  /* Add your desktop styles here */
+}
+
+/* TV and Extra large screens */
+@media screen and (min-width: 1201px) {
+
+  /* Add your extra large screen styles here */
 }

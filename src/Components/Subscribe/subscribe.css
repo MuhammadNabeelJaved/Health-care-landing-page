@@ -24,6 +24,7 @@
   align-items: center;
   border-radius: 35px;
   gap: 85px;
+  flex-wrap: wrap;
 }
 .subscribe-image {
   width: 570px;
