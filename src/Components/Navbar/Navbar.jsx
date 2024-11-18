@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
 import Form from "../Form/Form";
@@ -7,11 +7,34 @@ const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [forms, setForms] = useState(false);
   const [formData, setFormData] = useState("");
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+  const closeNavbar = () => {
+    setIsSidebarOpen(false);
+  };
+
   const SignUpFrom = (formData) => {
     setForms(true);
     setFormData(formData);
     setIsSidebarOpen(false);
   };
+  console.log("useEffect", isSidebarOpen)
+  // Close sidebar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isSidebarOpen &&
+        !event.target.closest(".navbar") &
+        !event.target.closest(".burger-navbar")
+      ) {
+        setIsSidebarOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isSidebarOpen]);
   return (
     <>
       {forms && (
@@ -22,7 +45,18 @@ const Navbar = () => {
         />
       )}
       <header className="App-header">
-        <nav className="navbar">
+        <svg
+          onClick={toggleSidebar}
+          className="burger-navbar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="#2AA8FF"
+          viewBox="0 0 24 24"
+        >
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+        <nav className={`navbar ${isSidebarOpen ? "open" : "close"}`}>
           <div className="logo">
             {/* <NavLink to={`/`}> */}
             <svg

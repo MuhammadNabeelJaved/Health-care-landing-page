@@ -91,11 +91,11 @@
   /* Add your mobile styles here */
   .App-header {
     padding: 0px;
-    display: none;
+    /* display: none; */
   }
 
   .navbar {
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
@@ -111,7 +111,12 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     height: 100vh;
   }
-
+.navbar.close{
+  transform: translateX(100%);
+}
+.navbar.open{
+  transform: translateX(0%);
+}
   .nav-list {
     justify-content: flex-end;
     align-items: flex-end;
@@ -123,6 +128,19 @@
     align-items: flex-end;
     flex-direction: column;
     margin-top: 50px;
+  }
+  .burger-navbar{
+    margin: 5px;
+    position: absolute;
+    z-index: 2;
+  }
+  .navbar.close{
+    transform: translateX(140%);
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.open{
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -132,11 +150,11 @@
   /* Add your tablet styles here */
   .App-header {
     padding: 0px;
-    display: none;
+    /* display: none; */
   }
 
   .navbar {
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
@@ -151,6 +169,7 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     height: 100vh;
+    transform: translateX(140%);
   }
 
   .nav-list {
@@ -164,6 +183,19 @@
     align-items: flex-end;
     flex-direction: column;
     margin-top: 50px;
+  }
+  .burger-navbar{
+    margin: 10px;
+    position: absolute;
+    z-index: 2;
+  }
+  .navbar.close{
+    transform: translateX(140%);
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.open{
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -173,11 +205,11 @@
   /* Add your small screen/laptop styles here */
   .App-header {
     padding: 0px;
-    display: none;
+    /* display: none; */
   }
 
   .navbar {
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
@@ -205,6 +237,19 @@
     align-items: flex-end;
     flex-direction: column;
     margin-top: 50px;
+  }
+  .burger-navbar{
+    margin: 10px;
+    position: absolute;
+    z-index: 2;
+  }
+  .navbar.close{
+    transform: translateX(140%);
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.open{
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
   }
 }
 
