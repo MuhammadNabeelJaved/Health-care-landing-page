@@ -35,8 +35,16 @@
   flex-shrink: 0;
   border-radius: 35px 0px 0px 35px;
   background: rgba(30, 30, 30, 0.24);
-  mix-blend-mode: hard-light;
+  object-fit: contain;
+  overflow: hidden;
+  background-image: url("../../assets/doctor-7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+/* .subscribe-image img{
+  width: 100%;
+} */
 
 .subscribe-title {
   color: var(--dark, #102851);

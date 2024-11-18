@@ -1,5 +1,6 @@
 import React from "react";
 import "./subscribe.css";
+import doctor from "../../assets/doctor-7.jpg"
 
 const Subscribe = () => {
   return (
@@ -7,7 +8,7 @@ const Subscribe = () => {
       <div className="subscribe-container">
         <div className="subscribe-content">
           <div className="subscribe-image">
-            <img src="" alt="" />
+            {/* <img src={doctor} alt="" /> */}
           </div>
           <div className="subscribe-text">
             <h2 className="subscribe-title">Subscribe to Our Newsletter!</h2>
