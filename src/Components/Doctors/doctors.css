@@ -135,12 +135,37 @@
     line-height: 25px;
   }
 
-  /* .slider-image-container {
-    width: 22vw !important;
-  }
-  .slider-image {
-    width: 12vw;
-} */
+  .doctors-container {
+    padding: 28px;
+}
+  .image-slider {
+    width: 170px !important;
+    height: 197px;
+}
+.slider-image-container {
+  width: 67px !important;
+  height: 160px;
+}
+.image-slider {
+  width: 54px !important;
+  height: 60px;
+}
+.slider-name {
+  font-size: 10px;
+}
+.slider-title {
+  font-size: 8px;
+}
+.slick-dots li {
+  width: 6px;
+}
+.slick-dots li button:before {
+  font-size: 6px;
+}
+.arrow-svg{
+width: 20px;
+height: 20px;
+}
 }
 
 /* Medium devices (iPads, Tablets) */
@@ -154,18 +179,18 @@
     height: 197px;
 }
 .slider-image-container {
-  width: 100px !important;
-  height: 200px;
+  width: 67px !important;
+  height: 160px;
 }
 .image-slider {
-  width: 75px !important;
-  height: 85px;
+  width: 54px !important;
+  height: 60px;
 }
 .slider-name {
-  font-size: 14px;
+  font-size: 10px;
 }
-.slider-title{
-  font-size:12px;
+.slider-title {
+  font-size: 8px;
 }
 .slick-dots li {
   width: 12px;

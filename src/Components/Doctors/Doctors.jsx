@@ -8,7 +8,7 @@ import doctors from "./doctorsData.js";
 const CustomPrevArrow = ({ onClick }) => (
   <div className="custom-arrow custom-prev-arrow" onClick={onClick}>
     {/* Replace with your custom SVG or icon */}
-    <svg
+    <svg className="arrow-svg"
       xmlns="http://www.w3.org/2000/svg"
       width="38"
       height="38"
@@ -28,6 +28,7 @@ const CustomNextArrow = ({ onClick }) => (
   <div className="custom-arrow custom-next-arrow" onClick={onClick}>
     {/* Replace with your custom SVG or icon */}
     <svg
+    className="arrow-svg"
       xmlns="http://www.w3.org/2000/svg"
       width="38"
       height="38"
