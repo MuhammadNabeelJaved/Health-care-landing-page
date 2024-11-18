@@ -19,7 +19,10 @@
   align-items: center;
   padding: 50px 100px;
   margin-top: 400px;
+  flex-wrap: wrap;
+  gap: 50px
 }
+
 .experience-left-content {
   width: 570px;
   gap: 50px;
@@ -28,6 +31,7 @@
   align-items: self-start;
   flex-direction: column;
 }
+
 .content {
   display: flex;
   justify-content: center;
@@ -35,6 +39,7 @@
   flex-direction: column;
   gap: 25px;
 }
+
 .experience-para {
   color: var(--Primary, #2aa8ff);
   font-family: var(--font-family, sans-serif);
@@ -44,24 +49,29 @@
   line-height: normal;
   letter-spacing: 0.44px;
 }
+
 .experience-title {
   color: var(--dark, #102851);
   font-family: var(--font-family), sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: var(--font-weight, 500);
-  line-height: 68px; /* 154.545% */
+  line-height: 68px;
+  /* 154.545% */
   letter-spacing: 0.88px;
 }
+
 .experience-description {
   color: var(--Gray, #abb6c7);
   font-family: var(--font-family), sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
+  /* 160% */
   letter-spacing: 0.4px;
 }
+
 .experience-button {
   display: inline-flex;
   padding: 16px 22px;
@@ -81,9 +91,11 @@
   cursor: pointer;
   transition: background 0.2s ease-in-out;
 }
+
 .experience-button:hover {
   background: #51b6ff;
 }
+
 .image-container {
   width: 369.379px;
   height: 504.226px;
@@ -98,6 +110,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bg-rectangle {
   width: 367.275px;
   height: 501.271px;
@@ -105,4 +118,82 @@
   flex-shrink: 0;
   border-radius: 6px;
   background: #e8f1ff;
+}
+
+
+/* Small devices (Mobile devices) */
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  /* Add your mobile styles here */
+  .experience-container {
+    margin-top: 1500px;
+    justify-content: center;
+    padding: 28px;
+  }
+
+  .experience-title {
+    font-size: 24px;
+    line-height: 35px;
+}
+  .image-container{
+    width: 80vw;
+    height: 62vh;
+
+  }
+  .bg-rectangle {
+    width: 75vw;
+    height: 63vh;
+}
+.experience-para {
+  font-size: 18px;
+}
+.experience-description {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+}
+
+/* Medium devices (iPads, Tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Add your tablet styles here */
+  .experience-container {
+    margin-top: 1400px;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .experience-title {
+    font-size: 31px;
+    line-height: 43px;
+  }
+}
+
+/* Large devices (Small screens, laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* Add your small screen/laptop styles here */
+  .experience-container {
+    margin-top: 1000px;
+    justify-content: center;
+  }
+
+  .experience-title {
+    font-size: 31px;
+    line-height: 43px;
+  }
+}
+
+/* Extra large devices (Desktops, large screens) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  /* Add your desktop styles here */
+  .experience-container {
+    margin-top: 600px;
+  }
+}
+
+/* TV and Extra large screens */
+@media screen and (min-width: 1201px) and (max-width: 1340px) {
+
+  /* Add your extra large screen styles here */
 }
