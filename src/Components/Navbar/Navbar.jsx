@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
+import Form from "../Form/Form";
 
 const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [forms, setForms] = useState(false);
+  const [formData, setFormData] = useState("");
+  const SignUpFrom = (formData) => {
+    setForms(true);
+    setFormData(formData);
+    setIsSidebarOpen(false);
+  };
   return (
     <>
+      {forms && (
+        <Form
+          setForms={setForms}
+          formData={formData}
+          initialFormType={formData}
+        />
+      )}
       <header className="App-header">
         <nav className="navbar">
           <div className="logo">
@@ -45,8 +61,8 @@ const Navbar = () => {
             <li className="item-links">Contact us</li>
           </ul>
           <div className="sign-up-in">
-            <p className="sign-up">Sign up</p>
-            <p className="sign-in">Sign in</p>
+            <p onClick={() => SignUpFrom("sign up")} className="sign-up">Sign up</p>
+            <p onClick={() => SignUpFrom("login")} className="sign-in">Sign in</p>
           </div>
         </nav>
       </header>

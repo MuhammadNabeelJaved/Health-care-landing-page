@@ -1,3 +1,39 @@
+/* form.css */
+:root {
+    --primary-color: #2aa8ff;
+    /* Lighter blue for better contrast */
+    --primary-hover: rgb(59, 151, 255);
+    /* Even lighter on hover */
+    --text-color: #2aa8ff;
+    /* Light gray text */
+    --text-light: #9ca3af;
+    /* Muted gray text */
+    --bg-color: #ffffff;
+    /* Dark background */
+    --bg-overlay: rgba(0, 0, 0, 0.7);
+    /* Darker overlay */
+    --border-color: rgba(255, 255, 255, 0.1);
+    /* Darker border */
+    --input-bg: #ffffff;
+    /* Even darker background for inputs */
+    --focus-ring: rgba(96, 165, 250, 0.2);
+    /* Visible focus ring */
+    --font-family: "Poppins", sans-serif;
+    --font-color: white;
+  }
+
+  :root {
+
+    --font-size: 16px;
+    --font-weight: 500;
+    --font-color: #fff;
+    --nav-item-color: #abb6c7;
+    --dark: #102851;
+    --background-color: #2aa8ff;
+    --link-color: #fff;
+    --link-hover-color: #fff;
+    --button-bg-color: #2aa8ff;
+  }
 
 .form-container {
     position: fixed;
@@ -173,7 +209,7 @@
   }
   
   .sign-in {
-    color: var(--primary-color);
+    color: var(--bg-color);
     font-weight: 600;
     margin-left: 0.25rem;
     transition: color 0.2s;
