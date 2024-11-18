@@ -17,9 +17,11 @@
   padding: 50px 100px;
   margin: 100px 0px;
 }
+
 .specialist {
   margin-bottom: 80px;
 }
+
 .specialist-title {
   color: var(--dark, #102851);
   font-family: var(--font-family, sans-serif);
@@ -30,6 +32,7 @@
   letter-spacing: 0.88px;
   text-align: center;
 }
+
 .slider-container {
   display: flex;
   justify-content: center;
@@ -55,14 +58,17 @@
   height: auto;
   object-fit: cover;
 }
+
 .custom-arrow {
   cursor: pointer;
 }
+
 .slick-initialized .slick-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .slider-image-container {
   width: 270px !important;
   height: 369px;
@@ -72,6 +78,7 @@
   padding-top: 14px;
   cursor: pointer;
 }
+
 .slider-name {
   color: var(--dark, #102851);
   text-align: center;
@@ -83,6 +90,7 @@
   letter-spacing: 0.36px;
   margin-top: 12px;
 }
+
 .slider-title {
   color: var(--Gray, #abb6c7);
   text-align: center;
@@ -111,7 +119,111 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: #2aa8ff;
+}
+
+
+/* Small devices (Mobile devices) */
+@media screen and (min-width: 300px) and (max-width: 480px) {
+
+  /* Add your mobile styles here */
+  .specialist-title {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  /* .slider-image-container {
+    width: 22vw !important;
+  }
+  .slider-image {
+    width: 12vw;
+} */
+}
+
+/* Medium devices (iPads, Tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Add your tablet styles here */
+  .doctors-container {
+    padding: 50px;
+}
+  .image-slider {
+    width: 170px !important;
+    height: 197px;
+}
+.slider-image-container {
+  width: 100px !important;
+  height: 200px;
+}
+.image-slider {
+  width: 75px !important;
+  height: 85px;
+}
+.slider-name {
+  font-size: 14px;
+}
+.slider-title{
+  font-size:12px;
+}
+.slick-dots li {
+  width: 12px;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+}
+}
+
+/* Large devices (Small screens, laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Add your small screen/laptop styles here */
+  .image-slider {
+    width: 170px !important;
+    height: 197px;
+}
+.slider-image-container {
+  width: 100px !important;
+  height: 200px;
+}
+.image-slider {
+  width: 75px !important;
+  height: 85px;
+}
+.slider-name {
+  font-size: 14px;
+}
+.slider-title{
+  font-size:12px;
+}
+}
+
+/* Extra large devices (Desktops, large screens) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* Add your desktop styles here */
+  .image-slider {
+    width: 170px !important;
+    height: 197px;
+}
+.slider-image-container {
+  width: 150px !important;
+  height: 270px;
+}
+.image-slider {
+  width: 124px !important;
+  height: 141px;
+}
+}
+
+/* TV and Extra large screens */
+@media screen and (min-width: 1201px) and (max-width: 1340px) {
+  /* Add your extra large screen styles here */
+  .image-slider {
+    width: 170px !important;
+    height: 197px;
+}
+.slider-image-container {
+  width: 197px !important;
+  height: 323px;
+}
 }

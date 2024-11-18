@@ -123,6 +123,7 @@
 
 /* Small devices (Mobile devices) */
 @media screen and (min-width: 300px) and (max-width: 480px) {
+
   /* Add your mobile styles here */
   .experience-container {
     margin-top: 1500px;
@@ -133,28 +134,33 @@
   .experience-title {
     font-size: 24px;
     line-height: 35px;
-}
-  .image-container{
+  }
+
+  .image-container {
     width: 80vw;
     height: 62vh;
 
   }
+
   .bg-rectangle {
     width: 75vw;
     height: 63vh;
-}
-.experience-para {
-  font-size: 18px;
-}
-.experience-description {
-  font-size: 16px;
-  line-height: 28px;
-}
+  }
+
+  .experience-para {
+    font-size: 18px;
+  }
+
+  .experience-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
 
 }
 
 /* Medium devices (iPads, Tablets) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
   /* Add your tablet styles here */
   .experience-container {
     margin-top: 1400px;
