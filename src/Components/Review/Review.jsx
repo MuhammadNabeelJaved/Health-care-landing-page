@@ -72,6 +72,7 @@ const Review = () => {
           <div className="review">
             <div className="rectangle-image">
               <img style={{ width: "100%" }} src={doctor9} alt="Review Image" />
+              
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
