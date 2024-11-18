@@ -183,16 +183,7 @@
     font-size: 10px;
     padding-left: 14px;
 }
-.footer-logo {
-  justify-content: center!important;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 15px;
-}
-.footer-container {
-  padding: 28px!important;
-  margin-top: 100px!important;
-}
+
 }
 
 /* Medium devices (iPads, Tablets) */
@@ -240,16 +231,7 @@
     width: 91%;
     height: 56px;
   }
-  .footer-logo {
-    justify-content: center!important;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.footer-container {
-  padding: 50px!important;
-  margin-top: 100px!important;
-}
+
 }
 
 /* Large devices (Small screens, laptops) */
