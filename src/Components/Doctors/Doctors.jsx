@@ -62,6 +62,38 @@ const Doctors = () => {
     afterChange: function (index) {
       console.log(`Slider Changed to: ${index + 1}`);
     },
+    responsive: [
+      {
+        breakpoint: 1340,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1126,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 834,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true
+        }
+      }
+    ]
   };
 
   return (
